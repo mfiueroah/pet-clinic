@@ -20,7 +20,7 @@ jobs:
           echo "hola mundo"
 
 test:
-runs:on: ubuntu-latest
+runs-on: ubuntu-latest
 steps:
   - name: test
     run: |
