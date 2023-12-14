@@ -20,8 +20,8 @@ jobs:
           echo "hola mundo"
 
 test:
-runs-on: ubuntu-latest
-steps:
-  - name: test
-    run: |
-     echo "hola 2 "
+  runs-on: ubuntu-latest
+  steps:
+    - name: test
+      run: |
+       echo "hola 2 "
