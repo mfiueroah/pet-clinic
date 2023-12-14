@@ -19,9 +19,15 @@ jobs:
         run: |
           echo "hola mundo"
 
-test:
-  runs-on: ubuntu-latest
-  steps:
-    - name: test
-      run: |
-       echo "hola 2 "
+  test:
+    
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    
+      - uses: actions/checkout@v3
+
+      - name: test
+        run: |
+          echo "hola mundo2"         
+
